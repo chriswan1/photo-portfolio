@@ -17,7 +17,7 @@ export default function AboutPage() {
           <div className="prose prose-neutral max-w-none">
             <p className="text-lg text-neutral-700 leading-relaxed">
               I'm a passionate photographer and videographer with a keen eye for capturing moments that tell compelling stories. 
-              My work spans across various genres, from portrait photography to documentary filmmaking, always striving to 
+              My work spans across various genres, from portrait photography to filmmaking, always striving to 
               create authentic and visually striking content.
             </p>
           </div>
@@ -28,15 +28,15 @@ export default function AboutPage() {
           <div className="space-y-4">
             <div className="border-l-4 border-neutral-200 pl-4">
               <h4 className="font-medium">Freelance Photographer & Videographer</h4>
-              <p className="text-sm text-neutral-600">2020 - Present</p>
+              <p className="text-sm text-neutral-600">2018 - Present</p>
               <p className="text-neutral-700 mt-1">
                 Specializing in portrait photography, event coverage, and commercial videography. 
                 Working with clients across various industries to create compelling visual content.
               </p>
             </div>
             <div className="border-l-4 border-neutral-200 pl-4">
-              <h4 className="font-medium">Documentary Filmmaker</h4>
-              <p className="text-sm text-neutral-600">2018 - 2022</p>
+              <h4 className="font-medium">Freelance Filmmaker</h4>
+              <p className="text-sm text-neutral-600">2025 - Present</p>
               <p className="text-neutral-700 mt-1">
                 Created award-winning documentary films focusing on social issues and human stories. 
                 Projects have been featured in film festivals and educational institutions.
@@ -72,9 +72,9 @@ export default function AboutPage() {
         <div>
           <h3 className="text-xl font-semibold mb-3">Contact</h3>
           <div className="space-y-2 text-neutral-700">
-            <p>📧 <a href="mailto:hello@example.com" className="underline hover:no-underline">hello@example.com</a></p>
-            <p>📱 <a href="tel:+1234567890" className="underline hover:no-underline">+1 (234) 567-890</a></p>
-            <p>📍 Based in [Your City], [Your Country]</p>
+            <p>📧 <a href="mailto:chris.edward.wan@gmail.com" className="underline hover:no-underline">chris.edward.wan@gmail.com</a></p>
+            <p>📱 <a href="tel:+15107098975" className="underline hover:no-underline">+1 (510) 709-8975</a></p>
+            <p>📍 Based in Irvine, CA</p>
           </div>
         </div>
       </section>

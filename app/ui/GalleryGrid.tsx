@@ -7,6 +7,24 @@ type Props = {
   items: PortfolioItem[];
 };
 
+// Helper function to format date
+function formatDate(dateString: string): string {
+  if (!dateString) return "";
+  
+  try {
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) return "";
+    
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    });
+  } catch {
+    return "";
+  }
+}
+
 export function GalleryGrid({ items }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
@@ -115,6 +133,9 @@ function Card({
       </div>
       <div className={`p-3 ${isHovered ? 'block' : 'hidden'} bg-white/90 backdrop-blur-sm rounded-none shadow-sm transition-shadow absolute bottom-0 left-0 right-0 z-20`}>
         <h3 className="font-medium text-sm truncate" title={item.title}>{item.title}</h3>
+        {item.date && (
+          <p className="text-xs text-muted mt-1">{formatDate(item.date)}</p>
+        )}
         {item.description ? (
           <p className="text-xs text-muted mt-1 line-clamp-2">{item.description}</p>
         ) : null}
