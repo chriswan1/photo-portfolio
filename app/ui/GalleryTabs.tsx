@@ -17,7 +17,7 @@ export function GalleryTabs({ items }: GalleryTabsProps) {
 
   const filteredAndSortedItems = useMemo(() => {
     // First filter by tab
-    let filtered = (() => {
+    const filtered = (() => {
       switch (activeTab) {
         case "photos":
           return items.filter((i) => i.type === "photo");

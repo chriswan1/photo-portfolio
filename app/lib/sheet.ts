@@ -70,6 +70,7 @@ export async function fetchPortfolioItems(): Promise<PortfolioItem[]> {
   const response = await fetch(SHEET_CSV_URL, { next: { revalidate: 60 } });
   const csv = await response.text();
   const parsed = Papa.parse(csv, { header: true, skipEmptyLines: true });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const rows = (parsed.data as any[]).filter(Boolean);
 
   const items: PortfolioItem[] = await Promise.all(

@@ -46,7 +46,7 @@ export function GalleryGrid({ items }: Props) {
             onHover={() => setHoverIndex(idx)}
             onLeave={() => setHoverIndex((i) => (i === idx ? null : i))}
             isHovered={hoverIndex === idx}
-            isOtherShrunk={hoverIndex !== null && hoverIndex !== idx}
+            // isOtherShrunk={hoverIndex !== null && hoverIndex !== idx}
           />
         ))}
       </div>
@@ -67,14 +67,14 @@ function Card({
   onHover,
   onLeave,
   isHovered,
-  isOtherShrunk,
+  // isOtherShrunk,
 }: {
   item: PortfolioItem;
   onOpen: () => void;
   onHover: () => void;
   onLeave: () => void;
   isHovered: boolean;
-  isOtherShrunk: boolean;
+  // isOtherShrunk: boolean;
 }) {
   const isVideo = item.type === "video";
   const isGooglePhotos = /photos\.google\.com|photos\.app\.goo\.gl/.test(item.url);

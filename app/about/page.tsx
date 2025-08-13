@@ -16,7 +16,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <div className="prose prose-neutral max-w-none">
             <p className="text-lg text-neutral-700 leading-relaxed">
-              I'm a passionate photographer and videographer with a keen eye for capturing moments that tell compelling stories. 
+              I&apos;m a passionate photographer and videographer with a keen eye for capturing moments that tell compelling stories. 
               My work spans across various genres, from portrait photography to filmmaking, always striving to 
               create authentic and visually striking content.
             </p>
