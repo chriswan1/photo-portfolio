@@ -13,7 +13,7 @@ export type PortfolioItem = {
 };
 
 // Replace this with your published Google Sheet CSV URL
-export const SHEET_CSV_URL = process.env.NEXT_PUBLIC_SHEET_CSV_URL || "https://docs.google.com/spreadsheets/d/e/2PACX-1vSI1FKgQSFpeKvl8cjxEmcqypVVzGlmuDXlqIKuSRMgFcnD7Y03zLDG-X8kDaM5RreeFzZKlxyczk7X/pubhtml";
+export const SHEET_CSV_URL = process.env.NEXT_PUBLIC_SHEET_CSV_URL || "";
 
 export function extractDriveFileId(inputUrl: string): string | null {
   // Matches: https://drive.google.com/file/d/FILE_ID/... or uc?id=FILE_ID
