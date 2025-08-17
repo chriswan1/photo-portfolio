@@ -30,18 +30,17 @@ export default function AboutPage() {
               <h4 className="font-medium">Freelance Photographer & Videographer</h4>
               <p className="text-sm text-neutral-600">2018 - Present</p>
               <p className="text-neutral-700 mt-1">
-                Specializing in portrait photography, event coverage, and commercial videography. 
-                Working with clients across various industries to create compelling visual content.
+                Specializing in portrait and street photography. 
+                Created short films focusing on personal stories to showcase my life. 
               </p>
             </div>
-            <div className="border-l-4 border-neutral-200 pl-4">
+            {/* <div className="border-l-4 border-neutral-200 pl-4">
               <h4 className="font-medium">Freelance Filmmaker</h4>
               <p className="text-sm text-neutral-600">2025 - Present</p>
               <p className="text-neutral-700 mt-1">
-                Created award-winning documentary films focusing on social issues and human stories. 
-                Projects have been featured in film festivals and educational institutions.
+                Created short films focusing on personal stories to showcase my life. 
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -52,18 +51,16 @@ export default function AboutPage() {
               <h4 className="font-medium mb-2">Photography</h4>
               <ul className="text-sm text-neutral-700 space-y-1">
                 <li>• Portrait Photography</li>
-                <li>• Event Photography</li>
-                <li>• Commercial Photography</li>
+                <li>• Street Photography</li>
                 <li>• Photo Editing & Retouching</li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium mb-2">Videography</h4>
               <ul className="text-sm text-neutral-700 space-y-1">
-                <li>• Documentary Filmmaking</li>
-                <li>• Commercial Video Production</li>
+                <li>• Lifestyle Filmmaking</li>
+                <li>• Short Films</li>
                 <li>• Video Editing & Post-Production</li>
-                <li>• Motion Graphics</li>
               </ul>
             </div>
           </div>
