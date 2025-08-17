@@ -12,10 +12,10 @@ interface GalleryTabsProps {
 }
 
 export function GalleryTabs({ items }: GalleryTabsProps) {
-  const [activeTab, setActiveTab] = useState<TabType>("all");
-  const [sortBy, setSortBy] = useState<SortType>("recent");
+  const [activeTab, setActiveTab] = useState<TabType>("all"); // start Gallery in the All tab
+  const [sortBy, setSortBy] = useState<SortType>("recent"); // start Gallery in the recent sorting order
 
-  const filteredAndSortedItems = useMemo(() => {
+  const filteredAndSortedItems = useMemo(() => { //“memorize” (cache) the result of a calculation.
     // First filter by tab
     const filtered = (() => {
       switch (activeTab) {
